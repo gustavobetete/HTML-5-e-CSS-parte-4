@@ -165,7 +165,11 @@ td, th {
     font-size: 2em; /* 2em =  siginifica que vai ser o doblo da fonte base*/
     margin: 0 0 1em;
     clear: left;
+/*  color: rgb(0, 0, 0);  Cor em RGB */
+/*  color: rgba(0, 0, 0, 0.5)  RGBA = mexe na opacidade da cor */
+/*  text-shadow: 2px 2px #000000;  Cria uma sombra no texto */ 
 }
+
 /*
 .titulo-principal:first-letter {  Marca a primeira letra em negrito 
     font-weight: bold;
@@ -254,6 +258,13 @@ p:first-line{  Coloca a primeira letra em italico
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1; /* Mexer na opacidade do elemento  vai de 0 a 1*/
+    transition: 400ms; /* faz a transição */
+    box-shadow: 10px 10px 5px #000000; /* Comando para Criar uma sombra ( X Y #COR ) */
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.8;
 }
 
 .video {
