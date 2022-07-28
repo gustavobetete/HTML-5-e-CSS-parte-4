@@ -95,11 +95,12 @@ footer {
     font-size: 13px;
     margin: 20px 0 0;
 }
-
+/*
 main {
-    
+    width: 940px;
+    margin: 0 auto;
 }
-
+*/
 form {
     margin: 40px 0;
 }
@@ -165,7 +166,23 @@ td, th {
     margin: 0 0 1em;
     clear: left;
 }
+/*
+.titulo-principal:first-letter {  Marca a primeira letra em negrito 
+    font-weight: bold;
+}
 
+p:first-line{  Coloca a primeira letra em italico  
+    font-style: italic;
+}
+
+.titulo-principal:before { Coloca um [ antes de todo o titulo
+    content: "[";
+ }
+
+ .titulo-principal:after { Coloca um ] depois de todo o titulo
+    content: "]";
+ }
+ */
 .principal {
     padding: 3em 0;
     background-color: #FEFEFE;
@@ -229,6 +246,10 @@ td, th {
 
 .itens:first-child {  /* First-child = modifica apenas o primeiro elemento da lista*/
     font-weight: bold;
+}
+
+.itens:before {
+    content: "★";
 }
 
 .imagem-beneficios {
