@@ -272,6 +272,24 @@ p:first-line{  Coloca a primeira letra em italico
     margin: 2em auto;
 }
 
+@media screen and (max-width: 480px) {  /*Comando para funcionar em todos os tamnanhos de tela */
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
 /* 
 
 main > p { Seletor >, para acessar os filhos de determinado elemento.
